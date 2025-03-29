@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raylink Tech Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            font-size: 18px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Raylink Tech Hub 🚀</h1>
+        <p>Your ultimate destination for premium tech products and services.</p>
+        <p>Join our WhatsApp group and channel for updates!</p>
+        <a href="https://chat.whatsapp.com/YOUR_GROUP_LINK" class="button">Join WhatsApp Group</a>
+        <a href="https://whatsapp.com/channel/YOUR_CHANNEL_LINK" class="button">Join WhatsApp Channel</a>
+        <br><br>
+        <a href="signup.html" class="button">Continue</a>
+    </div>
+</body>
+</html>
+
+        @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #001f3f, #007bff, #00d4ff);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 32px;
+            font-family: 'Gloock', serif;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .container {
+            padding: 20px;
+        }
+        .button {
+            background-color: #ff5733;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #ff2200;
+        }
+        .hidden {
+            display: none;
+            font-size: 18px;
+            color: #ffcc00;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            display: block;
+            background-color: #00ff99;
+            color: #000;
+            padding: 10px;
+            margin: 5px auto;
+            width: 250px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .product {
+            background: rgba(0,0,0,0.3);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcomePage">
+        <h1>🌟 Welcome to <span style="font-family: 'Gloock', serif;">Raylink Tech Hub</span> 🚀</h1>
+        <p>Your ultimate destination for the best tech products and tools. 🛠️💻📱</p>
+        <p>🌍 Innovate. Create. Dominate. - The Future of Tech is Here! 🚀</p>
+
+        <div class="image-container">
+            <img src="https://source.unsplash.com/400x300/?technology,software" alt="Tech Image">
+        </div>
+
+        <button class="button" onclick="showSignup()">➡️ Continue</button>
+        <p id="loadingText" class="hidden">⏳ Loading... Please wait...</p>
+
+        <div class="links">
+            <a href="https://chat.whatsapp.com/YOUR-GROUP-LINK">Join WhatsApp Group 📲</a>
+            <a href="https://whatsapp.com/channel/YOUR-CHANNEL-LINK">Follow WhatsApp Channel 📢</a>
+        </div>
+    </div>
+
+    <div id="signupPage" class="hidden">
+        <h2>🔐 Create an Account</h2>
+        <input type="text" id="username" placeholder="Enter Username" required><br>
+        <input type="password" id="password" placeholder="Enter Password" required><br>
+        <button onclick="login()">✅ Sign Up</button>
+        <p>Already have an account? <button onclick="showLogin()">Login Here</button></p>
+    </div>
+
+    <div id="loginPage" class="hidden">
+        <h2>🔑 Login</h2>
+        <input type="text" id="loginUser" placeholder="Enter Username" required><br>
+        <input type="password" id="loginPass" placeholder="Enter Password" required><br>
+        <button onclick="login()">🔓 Login</button>
+    </div>
+
+    <div id="dashboardPage" class="hidden">
+        <h1>📦 All Tech Products</h1>
+
+        <div class="product"><h3>🎵 TikTok Bypass Files (7 Days) - Ksh 40</h3><button onclick="buy('TikTok Bypass Files')">🛒 Buy Now</button></div>
+        <div class="product"><h3>🎥 YouTube Bypass Files (7 Days) - Ksh 40</h3><button onclick="buy('YouTube Bypass Files')">🛒 Buy Now</button></div>
+        <div class="product"><h3>🤖 WhatsApp Normal Bot - Ksh 60</h3><button onclick="buy('WhatsApp Normal Bot')">🛒 Buy Now</button></div>
+        <div class="product"><h3>🐞 WhatsApp Bug Bot - Ksh 100</h3><button onclick="buy('WhatsApp Bug Bot')">🛒 Buy Now</button></div>
+        <div class="product"><h3>🎨 Graphic Designer Software - Ksh 200</h3><button onclick="buy('Graphic Designer Software')">🛒 Buy Now</button></div>
+        <div class="product"><h3>☁️ Heroku Billed Account - Ksh 400</h3><button onclick="buy('Heroku Billed Account')">🛒 Buy Now</button></div>
+        <div class="product"><h3>📚 How to Create an App - Ksh 500</h3><button onclick="buy('How to Create an App')">🛒 Buy Now</button></div>
+        <div class="product"><h3>🌐 How to Create a Website - Ksh 500</h3><button onclick="buy('How to Create a Website')">🛒 Buy Now</button></div>
+    </div>
+
+    <script>
+        function showSignup() {
+            document.getElementById("welcomePage").style.display = "none";
+            document.getElementById("signupPage").style.display = "block";
+        }
+
+        function showLogin() {
+            document.getElementById("signupPage").style.display = "none";
+            document.getElementById("loginPage").style.display = "block";
+        }
+
+        function login() {
+            document.getElementById("signupPage").style.display = "none";
+            document.getElementById("loginPage").style.display = "none";
+            document.getElementById("dashboardPage").style.display = "block";
+        }
+
+        function buy(product) {
+            window.location.href = `https://wa.me/254758459230?text=I%20want%20to%20buy%20${product}`;
+        }
+    </script>
+</body>
+</html>
